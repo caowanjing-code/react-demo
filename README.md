@@ -2,7 +2,7 @@
 
 This project was made by react and ant-design.
 
-## Available Scripts
+## `npm install or yarn install or cnpm install`
 
 In the project directory, you should do this:
 
