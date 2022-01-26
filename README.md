@@ -6,6 +6,10 @@ This project was made by react and ant-design.
 
 In the project directory, you can run:
 
+##firstly,you should run npm install or yarn install or cnpm install to install node_mode
+
+then you can build it.
+
 ### `npm start`
 
 Runs the app in the development mode.\
