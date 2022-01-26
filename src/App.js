@@ -22,6 +22,7 @@ import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/ico
 
 // 导入路由
 import RouterPage from './router/RouterPage'
+
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 const { Search } = Input;
@@ -35,14 +36,14 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state={
-      key:1,
+      
     collapsed: false,
 
     }
   }
  handleClick=(e)=>{
    console.log(e)
-   this.props.getValue(e.key,e.item.props.children)
+  //  this.props.getValue(e.key,e.item.props.children)
  }
   onCollapse = collapsed => {
     console.log(collapsed);
@@ -62,8 +63,7 @@ class App extends React.Component {
 
           <Menu
           onClick={this.handleClick}
-          onChange={this.getValue}
-          defaultSelectedKeys={['1']}
+          // onChange={this.getValue}
           defaultOpenKeys = {['sub1','sub2','sub3','sub4','sub5','sub10']}
            mode="inline">
 
@@ -84,26 +84,26 @@ class App extends React.Component {
     />
   </Card>
 {/* 侧边栏部分 */}
-            <Menu.Item key="1" icon={<CalendarOutlined />}>
+            <Menu.Item key="2" icon={<CalendarOutlined />}>
              <Link className="axiosTest" to="/axiosTest">axiosTest</Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
+            <Menu.Item key="3" icon={<DesktopOutlined />}>
               Option 2
             </Menu.Item>
             <SubMenu key="sub1" icon={<OrderedListOutlined />} title="List">
-              <Menu.Item key="3">
+              <Menu.Item key="4">
                 <Link className="list" to="/list">list</Link>
               </Menu.Item>
-              <Menu.Item key="4">
+              <Menu.Item key="5">
                   
               <Link className="des" to="/description">
                     Desceiption
                 </Link>
               </Menu.Item>
-              <Menu.Item key="5">Alex</Menu.Item>
+              <Menu.Item key="6">Alex</Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-              <Menu.Item key="6">
+              <Menu.Item key="7">
                   <Link className="form1" to="/form1">
                       form1
                   </Link>
@@ -111,23 +111,23 @@ class App extends React.Component {
               <Menu.Item key="8">Team 2</Menu.Item>
             </SubMenu>
             <SubMenu key="sub3" icon={<TableOutlined />} title="Table">
-              <Menu.Item key="10" >
+              <Menu.Item key="9" >
                 <Link className="table1" to="/table1">
                     table1
                 </Link>
                 </Menu.Item>
-              <Menu.Item key="11">
+              <Menu.Item key="10">
               <Link className="table2" to="/table2">
                     table2
                 </Link>
               </Menu.Item>
-              <Menu.Item key="12">
+              <Menu.Item key="11">
               <Link className="table3" to="/table3">
                     table3
                 </Link>
               </Menu.Item>
             </SubMenu>
-            <Menu.Item key="9" icon={<FileOutlined />}>
+            <Menu.Item key="12" icon={<FileOutlined />}>
               Files
             </Menu.Item>
           </Menu>
