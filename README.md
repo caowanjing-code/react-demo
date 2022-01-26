@@ -4,9 +4,9 @@ This project was made by react and ant-design.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you should do this:
 
-##firstly,you should run npm install or yarn install or cnpm install to install node_mode
+first,you should run npm install or yarn install or cnpm install to install node_moudels
 
 then you can build it.
 
